@@ -1,12 +1,13 @@
 import React from "react";
 import Body from "./Body";
 
-const Card = () => {
-    return (
-        <div className="card">
-            <Body />
-        </div>
-    )
+class Card extends React.Component {
+
+    render() {
+        return <div className="card">{this.props.children}</div>
+    }
 }
+
+Card.Body = Body;
 
 export default Card;

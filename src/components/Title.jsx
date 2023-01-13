@@ -1,9 +1,5 @@
-import React from "react";
-
-const Title = () => {
-    return (
-        <h4 className="card-title">Title</h4>
-    )
+const Title = (props) => {
+    return <h4 className="card-title">{props.children}</h4>
 }
 
 export default Title;

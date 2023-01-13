@@ -1,9 +1,5 @@
-import React from "react";
-
-const Text = () => {
-    return (
-        <p className="card-text">Text</p>
-    )
+const Text = (props) => {
+    return <p className="card-text">{props.children}</p>
 }
 
 export default Text;
